@@ -1,0 +1,134 @@
+#msgCoord{
+  margin-top: 3em;
+}
+#msgGift{
+  background-color: #c5fe7d;
+  color: red;
+  border-radius: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: -50px;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.crt{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: url('crtfl.jpg');
+  background-size: contain;
+  border: 5px solid green;
+  padding: 0;
+}
+.crtPhoto{
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+}
+.xmas{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #9a0707;
+  background-size: contain;
+  border: 5px solid green;
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+.download {
+  font-size: 20px;
+}
+.download:active{
+  color: #04AA6D;
+}
+#songs{
+  margin-bottom: 70px;
+}
+
+/** Loader **/
+#loader {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer{
+  margin-right: -15px;
+  margin-left: -17px;
+  margin-bottom: -20px;
+}
